@@ -9,6 +9,8 @@
     padding: 20px 0;
 }
 
+
+
 .budget_card{
     margin: 10px 0;
 }
@@ -39,4 +41,21 @@ ul {
     color: red;
     font-size: 20px;
     font-weight: bold;
+}
+
+
+@media only screen and (min-width: 550px){
+    .content{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .flex-container{
+        width: 45%;
+    }
+
+    .right_text{
+        width: 45%;
+    }
 }

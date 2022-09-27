@@ -43,10 +43,9 @@ addExpenses.addEventListener('click', function getExpenses (e){
     budget = parseFloat(budget.value)
     expensesValues.push(parseFloat(expensesValue))
     let totalMoney = expensesValues.reduce((arg, acc)=> arg + acc, 0)
-    totalExpenses.innerText = totalMoney
+    totalExpenses.innerText = `$ ${totalMoney}`
     let balance = budget - totalMoney
-    balanceText.innerText = balance
-    console.log(balance);
+    balanceText.innerText = `$ ${balance}`
 })
 
 
