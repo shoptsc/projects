@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: 20px auto;
+    width: 90%;
+}
+
+.flex-container {
+    display: flex;
+    gap: 100px;
+    width: 100%;
+  }
+  
+  .flex-container > div {
+    /* background-color: #f1f1f1; */
+  
+    margin: 10px 0;
+    padding: 10px;
+    
+    /* font-size: 30px; */
+  }
+
+  .right {
+    display: flex;
+    gap: 20px;
+    width: 60%;
+  }
+
+  .right_1{
+    width: 35%;
+    max-height: 30vh;
+  }
+
+  #budget{
+    width: 100%;
+  }
+
+  .money{
+    color: green;
+    font-size: 40px;
+  }
+
+.font_awesome{
+    font-size: 50px;
+}
+.edit{
+    color: blue;
+}
+ul {
+    list-style-type: none;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* li{
+    font-size: 50px;
+} */
