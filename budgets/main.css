@@ -45,6 +45,11 @@ ul {
 
 
 @media only screen and (min-width: 550px){
+
+    .container{
+        padding: 7% 0;
+    }
+
     .content{
         display: flex;
         justify-content: space-between;
@@ -58,4 +63,20 @@ ul {
     .right_text{
         width: 45%;
     }
+
+    .money{
+        color: green;
+        font-size: 30px;
+    }
+
+    .top_left{
+        max-height: 32vh;
+        overflow-y: scroll;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    
 }
