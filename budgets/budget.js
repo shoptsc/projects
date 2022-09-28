@@ -3,9 +3,16 @@ let budgetOutput = document.querySelector('.budget_output')
 let addExpenses = document.querySelector('.add')
 let balanceText = document.querySelector('#balance')
 let totalExpenses = document.querySelector('#expense')
+let deleteExpenses = document.querySelector('.delete')
 expensesValues = []
 
+
+// deleteExpenses.addEventListener('click', function(){
+//     console.log('deleted');
+// })
+
 calculate.addEventListener('click', function getBudget (e){
+
     let budget = document.querySelector('#budget')
     budget = parseFloat(budget.value)
     e.preventDefault();
@@ -39,6 +46,7 @@ addExpenses.addEventListener('click', function getExpenses (e){
         if(!expensesTitle){
             alert('enter an expense title')
         }else{
+            
             if(!expensesValue){
                 alert('Please enter an expense value')
             }else{
@@ -54,8 +62,8 @@ addExpenses.addEventListener('click', function getExpenses (e){
                 list2.appendChild(node2)
                 getValue.appendChild(list2)
 
-                const list3 = document.createElement('li')
-                list3.innerHTML = '<i class="edit fa fa-pencil-square-o" aria-hidden="true"></i> <i class="delete fa fa-trash" aria-hidden="true"></i>'
+                const list3 = document.createElement('li') 
+                list3.innerHTML = '<span><i class="edit fa fa-pencil-square-o" aria-hidden="true"></i></span> <span class="delete"><i class="fa fa-trash" aria-hidden="true"></i></span>'
                 getIcon.append(list3)
 
                 expensesValues.push(parseFloat(expensesValue))

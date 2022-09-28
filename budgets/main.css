@@ -6,10 +6,8 @@
 
 .container{
     width: 90%;
-    padding: 20px 0;
+    padding: 20px 0 7%;
 }
-
-
 
 .budget_card{
     margin: 10px 0;
@@ -25,6 +23,12 @@
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
+    max-height: 32vh;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 .font_awesome{
